@@ -1,6 +1,45 @@
-/* Color Palletes */
-/* 
-    #1A1A1A - dark gray 
-    #272727 - light gray
-    #FAFAFA - dirty white
-*/
+/* General reset and body styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a; /* Dark background */
+    color: white;
+  }
+  
+  /* Header section */
+  header#hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full-screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  /* Canvas styling */
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Behind the content */
+  }
+  
+  /* Header content styling */
+  .header-content {
+    z-index: 1; /* Above the canvas */
+  }
+  
+  .header-content h1 {
+    font-size: 3rem;
+  }
+  
+  .header-content p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    color: #ccc;
+  }
+  
